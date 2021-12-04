@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list1">
+        <li>Meshv</li>
+        <li>Aksh</li>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <button id="1" onclick="aksh(this.id)">1</button>
+    <button id="2" onclick="aksh(this.id)">2</button>
+    <button id="3" onclick="aksh(this.id)">3</button>
+    <button id="4" onclick="aksh(this.id)">4</button>
+    <button id="5" onclick="aksh(this.id)">5</button>
+    <button id="6" onclick="aksh(this.id)">6</button>
+    <ul id="list2">
+
+    </ul>
+</body>
+<script>
+    function aksh(element) {
+        let a = document.getElementById('list1').children[element - 1];
+        // a1 = a.cloneNode(true)
+        let b = document.getElementById('list2');
+        b.appendChild(a);
+    }
+</script>
+
+</html>
